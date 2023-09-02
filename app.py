@@ -3,12 +3,16 @@
 from flask import Flask, render_template, request, redirect, url_for
 import joblib
 import pandas as pd
+import openai  # Import the OpenAI library
 
 app = Flask(__name__, template_folder='templates')
+
+api_key = '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'
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
     result = None
+    recommendations = None
     if request.method == 'POST':
         # Get user input from the form
         entreprise_id = int(request.form['entreprise_id'])
@@ -41,7 +45,7 @@ def index():
             'imposition_supplémentaire_évaluée': [imposition_eval],
             'créances_irrécouvrables': [creances_irrecouvrables]
         })
-
+        
         # Preprocess user input
         user_input = pd.get_dummies(user_input, columns=['industrie', 'catégorie_d\'actifs'])
 
@@ -60,16 +64,45 @@ def index():
             result = "No tax problem is predicted for the company."
         else:
             result = "A tax problem is predicted for the company."
+        
+        # Prepare the input prompt for GPT-3
+        input_prompt = "Tax Problem Description:\n"
+        input_prompt += f"- Entreprise ID: {entreprise_id}\n"
+        input_prompt += f"- Industry: {industrie}\n"
+        input_prompt += f"- Chiffre d'affaires: {chiffre_affaires}\n"
+        input_prompt += f"- Dépenses: {depenses}\n"
+        input_prompt += f"- Employés: {employes}\n"
+        input_prompt += f"- Catégorie d'actifs: {categorie_actifs}\n"
+        input_prompt += f"- Valeur d'actifs: {valeur_actifs}\n"
+        input_prompt += f"- Âge d'actifs: {age_actifs}\n"
+        input_prompt += f"- Imposition supplémentaire évaluée: {imposition_eval}\n"
+        input_prompt += f"- Créances irrécouvrables: {creances_irrecouvrables}\n"
+        input_prompt += f"- Probleme fiscale: {result}\n"
+        input_prompt += "Recommendations:"
 
-        return redirect(url_for('show_result', prediction=result))
+        # Make the API call to GPT-3
+        response = openai.Completion.create(
+            engine="text-davinci-002",
+            prompt=input_prompt,
+            max_tokens=300,  # Adjust the number of tokens as needed
+            api_key=api_key
+        )
 
+        # Extract the generated recommendation from the GPT-3 response
+        recommendations = response.choices[0].text.strip()
+        recommendations = recommendations.replace(recommendations[0], "", 1)
+        return redirect(url_for('show_result', prediction=result, recommendations=recommendations))
+    
     return render_template('index.html')
+
+   
+
 @app.route('/result')
 def show_result():
     # Get the prediction result from the query parameters
     result = request.args.get('prediction')
-
-    return render_template('result.html', result=result)
+    recommendations = request.args.get('recommendations') 
+    return render_template('result.html', result=result, recommendations=recommendations)
 
 if __name__ == '__main__':
     app.run(debug=True)
