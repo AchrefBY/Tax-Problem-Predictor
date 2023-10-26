@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<valeur_d'actifs &le; 7800000.0<br/>gini = 0.5<br/>samples = 39<br/>value = [34, 36]<br/>class = Difficult>, fillcolor="#f4fafe"] ;
+1 [label=<imposition_supplémentaire_évaluée &le; 105000.0<br/>gini = 0.18<br/>samples = 22<br/>value = [4, 36]<br/>class = Difficult>, fillcolor="#4fa8e8"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<gini = 0.0<br/>samples = 14<br/>value = [0, 24]<br/>class = Difficult>, fillcolor="#399de5"] ;
+1 -> 2 ;
+3 [label=<catégorie_d'actifs_encoded &le; 4.0<br/>gini = 0.375<br/>samples = 8<br/>value = [4, 12]<br/>class = Difficult>, fillcolor="#7bbeee"] ;
+1 -> 3 ;
+4 [label=<imposition_supplémentaire_évaluée &le; 130000.0<br/>gini = 0.142<br/>samples = 7<br/>value = [1, 12]<br/>class = Difficult>, fillcolor="#49a5e7"] ;
+3 -> 4 ;
+5 [label=<gini = 0.0<br/>samples = 1<br/>value = [1, 0]<br/>class = Not Difficult>, fillcolor="#e58139"] ;
+4 -> 5 ;
+6 [label=<gini = 0.0<br/>samples = 6<br/>value = [0, 12]<br/>class = Difficult>, fillcolor="#399de5"] ;
+4 -> 6 ;
+7 [label=<gini = 0.0<br/>samples = 1<br/>value = [3, 0]<br/>class = Not Difficult>, fillcolor="#e58139"] ;
+3 -> 7 ;
+8 [label=<gini = 0.0<br/>samples = 17<br/>value = [30, 0]<br/>class = Not Difficult>, fillcolor="#e58139"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}

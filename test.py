@@ -2,6 +2,8 @@ import pandas as pd
 import joblib
 from sklearn.calibration import LabelEncoder
 
+label_encoder = LabelEncoder()
+
 # Load the trained Random Forest model
 rf_model = joblib.load('trained_rf_model.pkl')
 
@@ -10,30 +12,26 @@ model_columns = joblib.load('model_columns.pkl')
 
 # Gather user input (replace these values with actual user input)
 user_input = {
-    'entreprise_id': 202,
     'industrie': 'Construction',
-    'chiffre_affaires': 2800000,
-    'dépenses': 2200000,
-    'employés': 150,
+    'chiffre_affaires': 32000000,
+    'dépenses': 23000000,
     'catégorie_d\'actifs': 'Amortissable',
-    'valeur_d\'actifs': 1400000,
-    'âge_d\'actifs': 28,
-    'imposition_supplémentaire_évaluée': 300000,
-    'créances_irrécouvrables': 500,
+    'valeur_d\'actifs': 12300500,
+    'âge_d\'actifs': 20,
+    'imposition_supplémentaire_évaluée': 420000,
+    'créances_irrécouvrables': 0,
 }
 
 # Convert user input into a DataFrame
 user_df = pd.DataFrame(user_input, index=[0])
 
 # Preprocess user input
-# One-hot encode categorical features
-user_df = pd.get_dummies(user_df, columns=['industrie', 'catégorie_d\'actifs'])
 
-# add missing categorical feature columns if any (the model may expect some features that the user didn't provide)
+user_df['industrie_encoded'] = label_encoder.fit_transform(user_df['industrie'])
+user_df.drop(['industrie'], axis=1, inplace=True)
 
-for col in model_columns:
-    if col not in user_df.columns:
-        user_df[col] = 0
+user_df['catégorie_d\'actifs_encoded'] = label_encoder.fit_transform(user_df['catégorie_d\'actifs'])
+user_df.drop(['catégorie_d\'actifs'], axis=1, inplace=True)
 
 # Reorder user input columns to match the model's expected column order
 user_df = user_df[model_columns]

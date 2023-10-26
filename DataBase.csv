@@ -1,0 +1,101 @@
+industrie,chiffre_affaires,dépenses,catégorie_d'actifs,valeur_d'actifs,âge_d'actifs,imposition_supplémentaire_évaluée,créances_irrécouvrables,difficulté_fiscale,type_de_donnée
+Santé,2900000,2100000,Amortissable,320000,8,20000,0,1,train
+Services,2500000,1850000,Non-Amortissable,650000,0,15000,10000,1,train
+Commerce de détail,4000000,3000000,Subvention d'Investissement,1400000,0,25000,0,1,train
+Construction,3800000,2700000,Amortissable,350000,17,25000,0,1,train
+Fabrication,7500000,5000000,Non-Amortissable,2850000,57,80000,0,1,test
+Technologie,14000000,8000000,Amortissable,1950000,39,130000,0,1,test
+Services,2100000,1450000,Non-Amortissable,880000,0,20000,0,1,test
+Commerce de détail,6500000,4500000,Amortissable,460000,23,50000,35000,1,test
+Construction,5500000,4000000,Non-Amortissable,2050000,41,35000,25000,1,train
+Fabrication,9000000,6000000,Amortissable,2450000,49,120000,0,1,train
+Technologie,13000000,7750000,Subvention d'Investissement,1850000,0,25000,0,1,train
+Santé,2700000,1950000,Amortissable,315000,15,25000,0,1,test
+Services,3150000,2250000,Non-Amortissable,980000,0,30000,20000,1,train
+Commerce de détail,7800000,5550000,Subvention d'Exploitation,2350000,47,120000,0,1,train
+Construction,6650000,4850000,Non-Amortissable,2530000,50,40000,0,1,test
+Fabrication,6050000,4200000,Amortissable,395000,19,35000,0,1,train
+Technologie,10400000,6250000,Non-Amortissable,1760000,0,30000,0,1,train
+Santé,3850000,2800000,Subvention de Solde,1400000,10,40000,0,1,test
+Services,2850000,2000000,Amortissable,310000,15,20000,15000,1,train
+Commerce de détail,8300000,5600000,Fonds commercial créé,3100000,2,50000,35000,1,train
+Construction,4950000,3650000,Amortissable,1400000,28,70000,0,1,train
+Fabrication,10500000,7000000,Non-Amortissable,4000000,20,100000,40000,1,test
+Technologie,15700000,9350000,Amortissable,2255000,45,150000,0,1,train
+Santé,3500000,2550000,Subvention d'Investissement,1570000,0,30000,0,1,train
+Services,2650000,1950000,Amortissable,420000,21,25000,12500,1,train
+Commerce de détail,10000000,6950000,Non-Amortissable,3950000,0,70000,50000,1,train
+Construction,6550000,4850000,Amortissable,1750000,35,100000,100000,1,train
+Fabrication,13000000,8550000,Non-Amortissable,4900000,38,120000,0,1,train
+Technologie,19500000,11750000,Amortissable,2780000,55,180000,0,1,train
+Santé,4500000,3350000,Subvention d'Investissement,2100000,0,50000,0,1,test
+Services,3450000,2550000,Non-Amortissable,1360000,0,40000,25000,1,train
+Commerce de détail,13000000,8550000,Amortissable,620000,31,70000,40000,1,train
+Construction,7050000,5050000,Fonds commercial créé,2650000,53,80000,50000,1,train
+Fabrication,15500000,10400000,Amortissable,2850000,57,160000,0,1,train
+Technologie,23000000,14100000,Non-Amortissable,4080000,0,90000,0,1,test
+Santé,4500000,3350000,Subvention de Solde,2000000,40,80000,0,1,train
+Services,3600000,2700000,Amortissable,550000,27,40000,25000,1,train
+Commerce de détail,12500000,8600000,Subvention d'Exploitation,3900000,18,180000,0,1,train
+Construction,8550000,6300000,Non-Amortissable,3280000,5,90000,100000,1,train
+Fabrication,18000000,12400000,Amortissable,3600000,12,200000,0,1,train
+Technologie,29000000,18100000,Subvention d'Investissement,4350000,0,110000,0,1,test
+Santé,6000000,4450000,Non-Amortissable,2500000,0,80000,0,1,test
+Services,4750000,3550000,Amortissable,715000,35,50000,30000,1,test
+Commerce de détail,17500000,12000000,Fonds commercial créé,4850000,37,170000,80000,1,test
+Construction,10500000,7750000,Amortissable,2950000,59,170000,0,1,train
+Fabrication,19500000,13500000,Non-Amortissable,7300000,26,250000,150000,1,train
+Technologie,31000000,19600000,Amortissable,4150000,23,280000,0,1,train
+Santé,7000000,5250000,Non-Amortissable,3350000,0,100000,0,1,train
+Services,4850000,3650000,Subvention de Solde,2650000,12,100000,50000,1,train
+Commerce de détail,20000000,13700000,Amortissable,5150000,43,300000,0,1,test
+Construction,13000000,9550000,Non-Amortissable,5000000,40,110000,0,0,train
+Fabrication,17500000,12400000,Amortissable,4370000,27,250000,0,0,test
+Technologie,34000000,22200000,Subvention d'Investissement,6530000,0,170000,0,0,test
+Santé,10000000,7450000,Non-Amortissable,4550000,0,120000,0,0,train
+Services,7000000,5250000,Amortissable,9850000,49,90000,0,0,test
+Commerce de détail,23000000,16000000,Fonds commercial créé,7500000,30,280000,100000,0,test
+Construction,17000000,12550000,Amortissable,4650000,33,270000,0,0,train
+Fabrication,24000000,17000000,Non-Amortissable,9300000,6,310000,0,0,train
+Technologie,45000000,28700000,Subvention d'Investissement,8700000,0,220000,0,0,train
+Santé,13500000,10100000,Non-Amortissable,6550000,0,150000,0,0,train
+Services,10500000,7800000,Subvention de Solde,3850000,12,150000,0,0,train
+Commerce de détail,28000000,20200000,Amortissable,7100000,22,360000,150000,0,train
+Construction,21500000,16000000,Fonds commercial créé,10000000,20,250000,0,0,train
+Fabrication,25000000,18500000,Non-Amortissable,9750000,15,350000,0,0,test
+Technologie,55000000,36500000,Amortissable,10230500,40,500000,0,0,train
+Santé,18000000,13500000,Subvention d'Investissement,8300000,0,220000,0,0,train
+Services,14000000,10500000,Non-Amortissable,9100000,0,240000,0,0,test
+Commerce de détail,32500000,23600000,Amortissable,11375000,40,450000,250000,0,test
+Construction,26500000,19750000,Fonds commercial créé,12500000,10,320000,0,0,train
+Fabrication,35000000,26000000,Amortissable,12855000,20,620000,0,0,train
+Technologie,75000000,49000000,Non-Amortissable,18982000,40,650000,0,0,train
+Santé,24000000,18000000,Subvention d'Investissement,10600000,0,340000,0,0,train
+Services,18500000,14000000,Non-Amortissable,11700000,0,310000,0,0,test
+Commerce de détail,40000000,28800000,Subvention de Solde,13900000,20,500000,0,0,train
+Construction,29500000,21500000,Amortissable,15000500,20,420000,0,0,train
+Fabrication,38000000,27600000,Fonds commercial créé,19500000,0,700000,0,0,test
+Technologie,95000000,60000000,Non-Amortissable,37800000,0,950000,0,0,train
+Santé,27500000,20000000,Amortissable,19130000,40,520000,0,0,train
+Services,21000000,15600000,Subvention d'Exploitation,14550000,0,420000,0,0,train
+Commerce de détail,55000000,38600000,Non-Amortissable,21100000,0,750000,250000,0,test
+Construction,36500000,26500000,Amortissable,22130000,40,600000,0,0,train
+Fabrication,57000000,43400000,Fonds commercial créé,28600000,20,900000,0,0,train
+Technologie,10000000,68700000,Non-Amortissable,44620000,20,1050000,0,0,train
+Santé,33500000,20500000,Subvention de Solde,17590000,0,530000,0,0,train
+Services,24000000,18000000,Amortissable,25570000,20,460000,0,0,train
+Commerce de détail,63000000,46500000,Subvention d'Investissement,32000000,0,1050000,400000,0,train
+Construction,42500000,32000000,Non-Amortissable,28000000,0,850000,0,0,test
+Fabrication,68000000,51200000,Amortissable,35695000,20,930000,0,0,train
+Technologie,129000000,84000000,Fonds commercial créé,49300000,20,1560000,0,0,train
+Santé,39000000,29000000,Non-Amortissable,74100000,0,1400000,0,0,test
+Services,285000000,21500000,Subvention d'Investissement,41400000,0,1060000,0,0,test
+Commerce de détail,78000000,57800000,Non-Amortissable,56200000,0,1620000,640000,0,train
+Construction,57000000,45000000,Amortissable,48740000,40,1160000,0,0,train
+Fabrication,93000000,69600000,Fonds commercial créé,89500000,20,2560000,0,0,train
+Technologie,150000000,100000000,Subvention d'Exploitation,74600000,0,1940000,0,0,train
+Santé,55000000,42000000,Non-Amortissable,120000000,0,3400000,0,0,train
+Services,315000000,24000000,Amortissable,60780000,0,1420000,0,0,test
+Commerce de détail,84000000,63600000,Subvention de Solde,82360000,0,2360000,0,0,train
+Construction,62500000,50000000,Fonds commercial créé,98400000,0,1750000,0,0,test
+Fabrication,105000000,84000000,Non-Amortissable,149400000,0,3400000,0,0,train
