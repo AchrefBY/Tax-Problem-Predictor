@@ -7,8 +7,7 @@ from sklearn.calibration import LabelEncoder  # Import the OpenAI library
 
 app = Flask(__name__, template_folder='templates')
 
-# api_key = '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'
-api_key = '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'
+api_key = 'Enter your API key'
 
 
 @app.route('/', methods=['GET', 'POST'])
